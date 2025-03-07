@@ -1,0 +1,110 @@
+{
+	"info": {
+		"_postman_id": "b2eeca17-3a33-4028-a4ba-564564c5a855",
+		"name": "Crowdin",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12174066",
+		"_collection_link": "https://www.postman.com/restless-resonance-631889/workspace/qa/collection/12174066-b2eeca17-3a33-4028-a4ba-564564c5a855?action=share&source=collection_link&creator=12174066"
+	},
+	"item": [
+		{
+			"name": "Update Articles 🆕",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "X-Crowdin-Access-ID",
+						"value": "50276d6c-cbcc-47d9-b458-88424ee87e0c",
+						"description": " ",
+						"type": "text"
+					},
+					{
+						"key": "api_token",
+						"value": "GDq56t2LrkBxzaflvKpSuK4tLeCLNhONTYtXLUVXKECnJl78vHIKafRFpjeASJFD5UOGmffryjG9YMN6Qt4G7/WC58U/HV3TWVB1Xc1P+eYPJlADqhWDkR8wDVCfNhjfrQ7rQusRPf7+dhJ038dbTQ==",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Update Title For Article New\",\r\n    \"crowdin_content\": \"```javascript\\n<script>\\ndocument.getElementById(\\\"demo\\\").innerHTML = \\\"Hello JavaScript!\\\";\\n</script> \\n```\",\r\n    \"category_id\": \"2c6c7593-cb7f-4a0c-b8cf-46d44989d5ee\",\r\n    \"source\": \"crowdin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{Apihub}}//v2/Crowdin/Articles/b8a22c04-5d8b-471a-980b-e8dfbb8c6cdf/de",
+					"host": [
+						"{{Apihub}}"
+					],
+					"path": [
+						"",
+						"v2",
+						"Crowdin",
+						"Articles",
+						"b8a22c04-5d8b-471a-980b-e8dfbb8c6cdf",
+						"de"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Categories 🆕",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "X-Crowdin-Access-ID",
+						"value": "50276d6c-cbcc-47d9-b458-88424ee87e0c",
+						"description": " ",
+						"type": "text"
+					},
+					{
+						"key": "api_token",
+						"value": "GDq56t2LrkBxzaflvKpSuK4tLeCLNhONTYtXLUVXKECnJl78vHIKafRFpjeASJFD5UOGmffryjG9YMN6Qt4G7/WC58U/HV3TWVB1Xc1P+eYPJlADqhWDkR8wDVCfNhjfrQ7rQusRPf7+dhJ038dbTQ==",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Update Title For Category Page New\",\r\n    \"crowdin_content\": \"\\n\\t<pre><code class=\\\"lang-html\\\" data-code-id=\\\"section-1695295630111\\\" data-language=\\\"html\\\">&lt;object img src = \\\"data.png\\\"&gt;Image&lt;/obj&gt;\\n</code></pre>\\n\\n\\t<pre><code class=\\\"lang-javascript\\\" data-code-id=\\\"section-1695295630113\\\" data-language=\\\"javascript\\\">&lt;script&gt;\\ndocument.getElementById(\\\"demo\\\").innerHTML = \\\"Hello JavaScript!\\\";\\n&lt;/script&gt; \\n</code></pre>\\n\",\r\n    \"source\": \"crowdin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{Apihub}}/v2/Crowdin/Categories/814ff67a-d06e-4559-a59e-95bb7c732667/content/de",
+					"host": [
+						"{{Apihub}}"
+					],
+					"path": [
+						"v2",
+						"Crowdin",
+						"Categories",
+						"814ff67a-d06e-4559-a59e-95bb7c732667",
+						"content",
+						"de"
+					],
+					"query": [
+						{
+							"key": "langCode",
+							"value": "de",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
